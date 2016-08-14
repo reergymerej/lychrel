@@ -20,5 +20,20 @@
   "license": "ISC",
   "directories": {
     "test": "test"
-  }
+  },
+  "description": "tests for Lychrel numbers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/lychrel.git"
+  },
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/reergymerej/lychrel/issues"
+  },
+  "homepage": "https://github.com/reergymerej/lychrel#readme",
+  "keywords": [
+    "lychrel",
+    "numbers",
+    "lychrel number"
+  ]
 }

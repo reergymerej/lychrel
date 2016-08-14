@@ -1,5 +1,7 @@
 # lychrel
 
+test for [Lychrel numbers][1]
+
 ## isPalindrome(val)
 * @param {String/Number} `val`
 * @return {Boolean}
@@ -67,3 +69,4 @@ isLychrel(196, 200);
 kickstarted by [npm-boom][npm-boom]
 
 [npm-boom]: https://github.com/reergymerej/npm-boom
+[1]: https://en.wikipedia.org/wiki/Lychrel_number
