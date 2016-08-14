@@ -50,3 +50,21 @@ describe('isPalindrome', () => {
     });
   });
 });
+
+describe('reverseAndAdd', () => {
+  describe('14', () => {
+    it('should return 55', () => {
+      const expected = 55;
+      const actual = app.reverseAndAdd(14);
+      expect(actual).to.equal(expected);
+    });
+  });
+
+  describe('123', () => {
+    it('should return 444', () => {
+      const expected = 444;
+      const actual = app.reverseAndAdd(123);
+      expect(actual).to.equal(expected);
+    });
+  });
+});

@@ -12,6 +12,18 @@ isPalindrome('otto');  // false
 ```
 
 
+## reverseAndAdd(val)
+* @param {Number} `val`
+* @return {Number}
+
+```js
+import {reverseAndAdd} from 'lychrel';
+
+reverseAndAdd(14);  // 55
+reverseAndAdd(123);  // 444
+```
+
+
 
 
 

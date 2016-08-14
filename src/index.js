@@ -1,3 +1,7 @@
+/**
+* @pararm {String/Number} val
+* @return {Boolean}
+*/
 export function isPalindrome(val) {
   let is = true;
   const valString = val + '';
@@ -9,4 +13,20 @@ export function isPalindrome(val) {
   }
 
   return is;
+}
+
+function reverseNum(num) {
+  let numString = num + '';
+  numString = numString.split('').reverse().join('');
+  return parseInt(numString, 10);
+}
+
+/**
+* @pararm {Number} val
+* @return {Number}
+*/
+export function reverseAndAdd(val) {
+  const reversed = reverseNum(val);
+  return val + reversed;
+  return 55;
 }
