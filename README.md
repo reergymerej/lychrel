@@ -2,6 +2,8 @@
 
 test for [Lychrel numbers][1]
 
+v1.0.0 [![Build Status](https://travis-ci.org/reergymerej/lychrel.svg?branch=master)](https://travis-ci.org/reergymerej/lychrel)  
+
 ## isPalindrome(val)
 * @param {String/Number} `val`
 * @return {Boolean}
