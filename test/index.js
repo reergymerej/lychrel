@@ -68,3 +68,53 @@ describe('reverseAndAdd', () => {
     });
   });
 });
+
+describe('isLychrel', () => {
+  describe('14', () => {
+    it('should return expected value', () => {
+      const expected = {
+        isLychrel: false,
+        lastValue: 55,
+        iterations: 1,
+      };
+      const actual = app.isLychrel(14);
+      expect(actual).to.eql(expected);
+    });
+  });
+
+  describe('89', () => {
+    it('should return expected value', () => {
+      const expected = {
+        isLychrel: false,
+        lastValue: 8813200023188,
+        iterations: 24,
+      };
+      const actual = app.isLychrel(89, 25);
+      expect(actual).to.eql(expected);
+    });
+  });
+
+  describe('196', () => {
+    it('should return undefined', () => {
+      const expected = {
+        isLychrel: undefined,
+        lastValue: 820255645655561900,
+        iterations: 100,
+      };
+      const actual = app.isLychrel(196);
+      expect(actual).to.eql(expected);
+    });
+  });
+
+  describe('196, 200', () => {
+    it('should return undefined', () => {
+      const expected = {
+        isLychrel: undefined,
+        lastValue: 3417785356534986000,
+        iterations: 200,
+      };
+      const actual = app.isLychrel(196, 200);
+      expect(actual).to.eql(expected);
+    });
+  });
+});
