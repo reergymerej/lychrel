@@ -2,9 +2,10 @@
 
 test for [Lychrel numbers][1]
 
-v1.0.0 [![Build Status](https://travis-ci.org/reergymerej/lychrel.svg?branch=master)](https://travis-ci.org/reergymerej/lychrel)  
+v1.0.1 [![Build Status](https://travis-ci.org/reergymerej/lychrel.svg?branch=master)](https://travis-ci.org/reergymerej/lychrel)  
 
 ## isPalindrome(val)
+Checks if a number/string is a palindrome
 * @param {String/Number} `val`
 * @return {Boolean}
 
@@ -12,11 +13,13 @@ v1.0.0 [![Build Status](https://travis-ci.org/reergymerej/lychrel.svg?branch=mas
 import {isPalindrome} from 'lychrel';
 
 isPalindrome(123321);  // true
-isPalindrome('otto');  // false
+isPalindrome('otto');  // true
+isPalindrome(123);  // false
 ```
 
 
 ## reverseAndAdd(val)
+Reverses the digits in a number and adds it to the original
 * @param {Number} `val`
 * @return {Number}
 
@@ -29,11 +32,12 @@ reverseAndAdd(123);  // 444
 
 
 ## isLychrel(val, maxIterations)
+Attempts to determine if a number is a Lychrel number.  Quits after max iterations.
 * @param {Number} `val`
 * @param {Number} `[maxIterations = 100]`
 * @return {Object}
-  * {Boolean/undefined} isLychrel
-  * {Number} lastValue
+  * {Boolean/undefined} isLychrel - false if disproven, undefined if indeterminate before max iterations
+  * {Number} lastValue - last calculated value
   * {Number} iterations
 
 ```js

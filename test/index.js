@@ -71,7 +71,7 @@ describe('reverseAndAdd', () => {
 
 describe('isLychrel', () => {
   describe('14', () => {
-    it('should return expected value', () => {
+    it('should return false', () => {
       const expected = {
         isLychrel: false,
         lastValue: 55,
@@ -83,7 +83,7 @@ describe('isLychrel', () => {
   });
 
   describe('89', () => {
-    it('should return expected value', () => {
+    it('should return false', () => {
       const expected = {
         isLychrel: false,
         lastValue: 8813200023188,
